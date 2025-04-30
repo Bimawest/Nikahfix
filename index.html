@@ -1958,6 +1958,16 @@ document.addEventListener('DOMContentLoaded', reveal);
   window.addEventListener('scroll', reveal);
 </script>
 
+<script>
+   const audio = document.getElementById('song');
+
+document.addEventListener('click', function() {
+    audio.play().catch(error => {
+        console.error('Error playing audio:', error);
+    });
+});
+</script>
+
 </body>
 
 </html>
